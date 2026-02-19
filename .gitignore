@@ -1,0 +1,59 @@
+# Compiled binaries
+*.o
+*.elf
+*.bit
+*.bin
+*.xsa
+
+# Vivado/Vitis build artifacts
+**/work/
+**/.Xil/
+**/runs/
+**/impl/
+**/synth/
+**/.cache/
+**/.compile_commands/
+**/.metadata/
+**/.analytics/
+**/.sdk/
+**/RemoteSystemsTempFiles/
+*.jou
+*.log
+*.str
+*.pb
+vivado_*.backup.*
+webtalk/
+NA/
+hls_output/
+
+# Vitis build
+**/build/
+**/Debug/
+**/Release/
+**/_ide/
+compile_commands.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Model files (too large for git)
+*.pt
+*.onnx
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large weight headers (add manually if needed)
+# tiny_yolo_weights.h
