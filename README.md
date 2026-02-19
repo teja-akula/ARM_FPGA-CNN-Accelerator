@@ -39,8 +39,8 @@ Hardware/software co-design implementation of a CNN-based object detection syste
 │  ┌──── PS (Processing System) ────┐                    │
 │  │  ARM Cortex-A9 @ 667 MHz       │                    │
 │  │  • Image preprocessing         │    512MB DDR3      │
-│  │  • Layer sequencing (driver)   │◄──►(Shared)       │
-│  │  • Post-processing (NMS)       │                   │
+│  │  • Layer sequencing (driver)   │◄──►(Shared)        │
+│  │  • Post-processing (NMS)       │                    │
 │  └──────────┬─────────────────────┘                    │
 │             │ AXI Interconnect                         │
 │  ┌──────────▼──── PL (FPGA Fabric) ──┐                 │
