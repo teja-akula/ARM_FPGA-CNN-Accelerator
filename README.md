@@ -178,3 +178,4 @@ python utils/uart_bridge.py COM7
 ## Author
 
 **Teja Akula** — [GitHub](https://github.com/teja-akula)
+**Sasi Vadan** - [GitHub](https://github.com/Sasivadan7)
