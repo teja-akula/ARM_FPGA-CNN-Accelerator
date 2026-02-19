@@ -31,30 +31,6 @@ Hardware/software co-design implementation of a CNN-based object detection syste
 
 ---
 
-## System Architecture
-
-```
-┌──────────────────── Zynq-7000 SoC ─────────────────────┐
-│                                                        │
-│  ┌──── PS (Processing System) ────┐                    │
-│  │  ARM Cortex-A9 @ 667 MHz       │                    │
-│  │  • Image preprocessing         │    512MB DDR3      │
-│  │  • Layer sequencing (driver)   │◄──►(Shared)        │
-│  │  • Post-processing (NMS)       │                    │
-│  └──────────┬─────────────────────┘                    │
-│             │ AXI Interconnect                         │
-│  ┌──────────▼──── PL (FPGA Fabric) ──┐                 │
-│  │  HLS CNN Accelerator @ 100 MHz    │                 │
-│  │  • Conv2D Engine (3×3, 1×1)       │                 │
-│  │  • 8 parallel MAC units (DSP48E1) │                 │
-│  │  • BatchNorm + LeakyReLU          │                 │
-│  │  • MaxPool 2×2                    │                 │
-│  │  • Tiled processing via BRAM      │                 │
-│  │  Resources: 220 DSP | 280KB BRAM  │                 │
-│  └───────────────────────────────────┘                 │
-└────────────────────────────────────────────────────────┘
-```
-
 ### Two Hardware Designs
 
 | Design | Block Diagram | Purpose |
