@@ -14,7 +14,7 @@ Hardware/software co-design implementation of a CNN-based object detection syste
 |--------|---------------------|----------------------|-------------|
 | **Latency** | 39,665 ms | 19,195 ms | **2.07×** |
 | **Throughput** | 0.025 FPS | 0.052 FPS | **2.07×** |
-| **Power (est.)** | 1.8 W | 2.5 W | — |
+| **Power** | — | — | — |
 | **Efficiency** | 0.014 FPS/W | 0.021 FPS/W | **1.5×** |
 
 ### Per-Layer Breakdown
